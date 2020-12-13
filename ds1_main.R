@@ -39,4 +39,4 @@ list_a[[3]] # membaca dari list
 #---- baca read CSV
 #---- baca read Excel dll
 
-#---- akan dilanjutkan jika dapat hal penting yang baru
+#---- akan dilanjutkan jika dapat hal penting yang baru lagi
