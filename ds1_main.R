@@ -11,8 +11,6 @@ e <- 2i         #bilangan kompleks
 ##cek tipe data
 class(e)
 
-##aritmatika pada variabel
-a + d
 
     ## Array
     arr_a <- 1:10
@@ -34,6 +32,13 @@ arr_a[2]    # membaca dari array
 mat_a[1,2]  # membaca dari matrix
 df_a[1,]    # membaca dari df
 list_a[[3]] # membaca dari list
+
+
+##aritmatika pada variabel
+a + d
+
+arr_a * a
+mat_a * a
 
 ##Membaca dari file
 #---- baca read CSV
