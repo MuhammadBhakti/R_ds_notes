@@ -1,1 +1,2 @@
-# R_ds_notes
+# R Essential Notes for Developing Web Apps
+Still in progress...
