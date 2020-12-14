@@ -1,6 +1,11 @@
 # catatan dalam proses pembuatan software dalam sebuah Web dengan menggunakan bahasa pemrograman R dan IDE Rstudio
 ## Running CTRL +ENTER
 
+#====Working Directory====
+setwd("D:/3. Datascience/1. R Studio/3. Project R/DS_Essentials/R_ds_notes/") #Example setting working directory
+getwd() #current working directory
+
+
 #====Variabel===
 a <- 10         #Numerik
 b <- "Sepuluh"  #String
@@ -33,15 +38,28 @@ mat_a[1,2]  # membaca dari matrix
 df_a[1,]    # membaca dari df
 list_a[[3]] # membaca dari list
 
+##Melihat struktur data
+str(df_a)
 
 ##aritmatika pada variabel
 a + d
-
+sin(a)
+cos(a)
+sum(arr_a)
+min(arr_a)
+mean(arr_a)
+max(arr_a)
+sd(arr_a) #standar dev
+#etc
 arr_a * a
 mat_a * a
 
+## fitur statistik pada R
+
+
 ##Membaca dari file
 #---- baca read CSV
+dat <- read.csv("D:/3. Datascience/1. R Studio/3. Project R/DS_Essentials/R_ds_notes/data.csv")
 #---- baca read Excel dll
 
 #---- akan dilanjutkan jika dapat hal penting yang baru lagi
