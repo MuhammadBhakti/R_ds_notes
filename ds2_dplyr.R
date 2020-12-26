@@ -48,3 +48,38 @@ distinct(flights, origin)
 df <- flights %>% group_by(origin) %>% summarise(flighthour = mean(hour),
                                                  avdist = mean(distance)) %>% mutate(av_a = avdist/flighthour)
  
+#----50 Example DPLYR--------
+#from
+URL <- "https://www.listendata.com/2016/08/dplyr-tutorial.html#"
+
+mydata = read.csv("https://raw.githubusercontent.com/deepanshu88/data/master/sampledata.csv")
+
+## 1. Random from df
+sample_n(mydata, 2) 
+
+## 2. random in percent
+sample_frac(mydata, 0.1) #10%
+
+## 3. remove duplicate row
+x <- distinct(mydata)
+
+## 4. remove duplicate par
+x <- distinct(mydata, Index, .keep_all = T)
+
+## 5. Select
+select(mydata, Index, State)
+
+## 6. Select several column
+select(mydata, Index:Y2005)
+
+## 7.Eliminating some column
+x <- select(mydata, -Index)
+
+## 8. Select variable start string "Y"
+x <- select(mydata, -starts_with("Y"))
+
+## 9. Select variable contain string "I"
+x <- select(mydata, contains("I"))
+
+## 10. Reorder
+x <- select(mydata, State, everything())
