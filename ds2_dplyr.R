@@ -83,3 +83,22 @@ x <- select(mydata, contains("I"))
 
 ## 10. Reorder
 x <- select(mydata, State, everything())
+
+## 11. Rename variable
+x1 <- rename(df, origin.flight=origin)
+names(df)
+names(x1)
+
+## 12. filter column
+x1 <- filter(df, origin=="JFK")
+head(x1)
+x1 <- filter(df, origin %in% c("JFK","LGA"))
+head(x1)
+x1 <- filter(flights, month %in% c(3,5,7) & carrier %in% c("UA", "AA","B6","DL")) #using and
+view(x1)
+x1 <- filter(flights, month %in% c(3) | carrier %in% c("UA", "AA")) #using OR
+View(x1)
+x1<-filter(flights, !month %in% c(1,12,5)) #exclude some variable
+distinct(x1, month)
+x1 <- filter(flights, grepl("AA",tailnum)) #filter tailnum contains AA word
+View(x1)
