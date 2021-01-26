@@ -1,0 +1,40 @@
+---
+title: "Dokumentasi R_Ds Notes"
+author: "Muhammad Bhakti"
+date: "1/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Dokumentasi Untuk R DS Notes
+
+Dokumentasi ini merupakan penjelassan dari script R pada folder kerja R Ds Notes. Untuk lebih lengkapnya dapat mengunjungi tautan berikut ini: <https://github.com/MuhammadBhakti/R_ds_notes.git>.
+
+# 1. Main 
+# 2. dplyr
+# 3. tidyr
+# 4. stringR
+```{r}
+library(tidyverse)
+library(stringr)
+
+#contoh string
+nama <- "ini adalah string"
+
+#string dalam vektor
+daftar_nama <- c("andy", "rudi", "haikal")
+
+#Melihat panjang string
+str_length(daftar_nama)
+
+#mengkombinasikan string
+str_c("nama saya ",daftar_nama)
+  # jika ingin ada separator
+  str_c("nama saya", daftar_nama, sep = " =")
+```
+
+# 5. ggplot
+# 6. shiny
