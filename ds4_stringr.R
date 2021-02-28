@@ -6,7 +6,7 @@ library(stringr)
 nama <- "ini adalah string"
 
 #string dalam vektor
-daftar_nama <- c("andy", "rudi", "haikal")
+daftar_nama <- c("andy", "rudi", "haikal","hasan","idris","ahmad","aidil","umar","zayd","ari")
 
 #Melihat panjang string
 str_length(daftar_nama)
@@ -29,4 +29,6 @@ str_view(daftar_nama, "a.")
 str_view(daftar_nama, ".a.")
 
 #mencari kecocokan pda string (deteksi)
-str_detect(daftar_nama, )
+str_detect(daftar_nama, "a")
+
+daftar_nama %>% as.data.frame() %>% mutate(xy=str_detect(daftar_nama, "a")) 
